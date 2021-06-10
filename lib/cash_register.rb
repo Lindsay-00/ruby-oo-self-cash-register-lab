@@ -10,9 +10,6 @@ class CashRegister
 
     def total 
         @total
-        
-        # @total = @total + @price * @quantity
-        # @total = @price * @quantity
     end
 
     def add_item (title, price, quantity = 1)
@@ -22,7 +19,7 @@ class CashRegister
         quantity.times do
             @all << title
         end
-        # @title = title
+        
         @total = @total + price * quantity 
     end
 
